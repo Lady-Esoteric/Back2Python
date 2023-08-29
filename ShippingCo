@@ -1,0 +1,36 @@
+#define weight
+weight = 41.5
+#Show weight
+print("Weight of your package:" , weight)
+print("")
+print("Here are your shipping options along with the cost: ")
+print("------------------------------------------------------")
+
+#ground shipping cost
+if weight <= 2:
+  cost = weight * 1.50 + 20.00
+elif weight <= 6:
+  cost = weight * 3.00 + 20.00
+elif weight <= 10:
+  cost = weight * 4.00 + 20.00
+else:
+  cost = weight * 4.75 + 20.00
+print("Ground shipping cost: $", cost)
+print("")
+#ground shipping premium
+cost_ground_premium = 125.00
+cost_ground_premium_total = weight * 125.00
+print("Ground shipping premium cost rate is: $", cost_ground_premium)
+print("Ground shipping premium total cost: $", cost_ground_premium_total)
+print("")
+#drone shipping costs
+if weight <= 2:
+  cost = weight * 4.50 
+elif weight <= 6:
+  cost = weight * 9.00 
+elif weight <= 10:
+  cost = weight * 12.00 
+else:
+  cost = weight * 14.25 
+#display the cost for drone shipping
+print ("Drone shipping cost: $", cost)
